@@ -2,13 +2,13 @@
 ```js
 var name = "Mark";
 ```
-<!-- name is a variable that has a value of "Mark" -->
+// name is variable with identifier "Mark"
 
 2. Find the error if any
 ```js
   var product cost = 3.45;
 ```
-<!-- The variable identifier is incorrectly defined as JS does not support gap/space. Alternatively, the developer can make use of the camel casing writing convention. Following which the identitfier will look like "productCost"   -->
+// The variable identifier is incorrectly defined as JS does not support gap/space. Alternatively, the developer can make use of the camel casing writing convention. Following which the identitfier will look like "productCost" 
 
 3. Write `Right or Wrong` next to the code below.
 
@@ -61,7 +61,7 @@ Solve this using logical operations. (<, >, &&, ||)
 var johnAge = 45;
 var markAge = 35;
 
-// Check who is older eithe John or Mark
+// Check who is older either John or Mark
 if (johnAge < markAge) {
   console.log('Mark is older');
 } else {
@@ -86,9 +86,9 @@ var john = johnAge;
 var mark = markAge;
 // Check if john is equal to or greater then mark.
 if (john >= mark) {
-  console.log ("John is greater than or equal  mark");
+  console.log ("John is less than or equal to mark");
 } else {
-  console.log("Mark is greater than John")
+  console.log("Mark is greater than John");
 }
 // Check if john is less then or equal to mark.
 if (john <= mark) {

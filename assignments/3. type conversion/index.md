@@ -30,6 +30,6 @@ Number(true); 1
 3. 🎖 Output of the following
 ```js
 var x = 10 + "1";
-console.log(x);
+console.log(x); //101
 typeof x; "string"
 ```

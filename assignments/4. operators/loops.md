@@ -1,10 +1,12 @@
 1. 🎖 Write a program to calculate the total price of your phone purchase. With these conditions
- * [ ] You will keep purchasing phones (hint: loop!) until you run out of bank balance.
- * [ ] You'll also buy accessories for each phone as long as your purchase amount is below your spending threshold.
- * [ ] After you've calculated your purchase amount, add in the tax, then print out the calculated purchase amount, properly formatted.
- * [ ] Finally, check the amount against your bank account balance to see if you can afford it or not.
- * [ ] Write a function called calculateTax which takes an argument 'amount' and calculates the tax you need to pay.
- * [ ] Write a function named formatAmount which returns you amount in this format '$ 132.45' make the decimal fixed to 2 places.
+
+- [ ] You will keep purchasing phones (hint: loop!) until you run out of bank balance.
+- [ ] You'll also buy accessories for each phone as long as your purchase amount is below your spending threshold.
+- [ ] After you've calculated your purchase amount, add in the tax, then print out the calculated purchase amount, properly formatted.
+- [ ] Finally, check the amount against your bank account balance to see if you can afford it or not.
+- [ ] Write a function called calculateTax which takes an argument 'amount' and calculates the tax you need to pay.
+- [ ] Write a function named formatAmount which returns you amount in this format '\$ 132.45' make the decimal fixed to 2 places.
+
 ```js
 const SPENDING_THRESHOLD = 200;
 const TAX_RATE = 0.08;
@@ -15,39 +17,24 @@ var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
 
+    // while (amount <= bank_balance) {
 
-var totalCostOfPhoneAndAccessories = PHONE_PRICE + ACCESSORY_PRICE;
-var totalCostOfPhoneAndAccessoriesWithTax = (1 + TAX_RATE) * totalCostOfPhoneAndAccessories;
-console.log(totalCostOfPhoneAndAccessoriesWithTax);
-
-if (totalCostOfPhoneAndAccessoriesWithTax <= bank_balance) {
-    console.log("Yay! You can afford the phone and accessories");
-} else {
-    console.log("You don't have enough money to buy this smartphone");
-}
-
-function calculateTax (amount) {
-    var tax = (amount * TAX_RATE) / 100;
-    return tax;
-}
-calculateTax(100);
-
-function formatAmount () {
-    roundedNumber = totalCostOfPhoneAndAccessoriesWithTax.toFixed(2);
-    return(`The total amount is ${roundedNumber}`);
-}
+    //     const phonePriceIncludingAccessories = (PHONE_PRICE + ACCESSORY_PRICE).toFixed(2);
+    //     const phonePriceIncludingAccessoriesAfterTax = ((1 + TAX_RATE) * (phonePriceIncludingAccessories)).toFixed(2);
+    //     console.log(`The price of both the phone and accessory including tax is $ ${phonePriceIncludingAccessoriesAfterTax}`);
+    //     if (phonePriceIncludingAccessoriesAfterTax <= SPENDING_THRESHOLD) {
+    //         console.log('You can afford the phone and accessories');
+    //     }
+    // amount = amount + phonePriceIncludingAccessoriesAfterTax;
+    // }
 
 
-var remainingBalance = SPENDING_THRESHOLD - totalCostOfPhoneAndAccessoriesWithTax;
-
-while (remainingBalance > totalCostOfPhoneAndAccessoriesWithTax) {
-  console.log("You can atleast buy one smartphone");
-}
 
 ```
- ⛑ Answer of the above will `$334.76`.
+⛑ Answer of the above will $334.76.
 
 2. 🎖 Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen using `alert` (e.g. "2 is even").
+
 ```js
 // your code goes here
 for (i = 0; i <= 20; i++) {
@@ -89,11 +76,14 @@ for (i = 1; i <= 10; i++) {
 
 // Your code goes here
 var s = "";
+var y = "";
 for (i = 1; i <= 5; i++) {
-
     s+= (`${i}, `);
+    y+= i + 5 + ', ';
 }
 console.log(s);
+console.log(y)
+
 // -------------------------------------------------------------------
 
 6. 🎖Use a while loop to add up the numbers 1 to 20.
@@ -124,6 +114,4 @@ while (num <= 20) {
     }
     num++;
 }
-
-
-
+```

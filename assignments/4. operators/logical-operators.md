@@ -6,7 +6,7 @@
 
 ```js
 true  && true; //output
-true  && false; //true
+true  && false; //false
 false && true; //false
 false && false; //false
 "foo" && "bar"; // bar
@@ -64,12 +64,12 @@ if (temperature < 32) {
 } else if (temperature > 110) {
     alert("It is hot outside")
 } else {
-    alert("Go for it. It id pretty nice out")
+    alert("Go for it. It is pretty nice out")
 }
 
 ```
 
 4. 🎖 Output of this and the reason behind the output.
 ```js
-alert( alert(1) || 2 || alert(3) ); // first number 1 will be prompted on the screen which is falsy. Following which 2 will be prompted on the screen and the code will stop as || looks for first truthy value which it finds on "2" in this case.
+alert( alert(1) || 2 || alert(3) ); // first number 1 will be prompted on the screen which is a truthy value. Following which undefined will be displayed as after alert(1) is being treated as a function with argument 1, both of which are undefined
 ```
